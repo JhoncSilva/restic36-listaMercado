@@ -1,0 +1,23 @@
+<app-add-item (onAddProduct)="addProduct($event)"></app-add-item>
+<div class="products">
+  <div class="unbought">
+    <h2>Não Comprados</h2>
+    <app-list-item *ngFor="
+      let produto of produtosNaoComprados" 
+      [produto]="produto" 
+      (onDeleteProduct)="deleteProduct($event)"
+      (onToggleComprado)="toggleCompra($event)"
+    >
+    </app-list-item>
+  </div>
+  <div class="bought">
+    <h2>Comprados</h2>
+    <app-list-item *ngFor="
+      let produto of produtosComprados" 
+      [produto]="produto" 
+      (onDeleteProduct)="deleteProduct($event)"
+      (onToggleComprado)="toggleCompra($event)"
+    >
+    </app-list-item>
+  </div>
+</div>

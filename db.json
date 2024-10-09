@@ -1,0 +1,22 @@
+{
+  "produto": [
+    {
+      "id": "1",
+      "produto": "Ovos",
+      "quantidade": 3,
+      "comprado": true
+    },
+    {
+      "id": "ca86",
+      "produto": "Teste",
+      "quantidade": 2,
+      "comprado": false
+    },
+    {
+      "id": "74a6",
+      "produto": "TEtst",
+      "quantidade": 2,
+      "comprado": false
+    }
+  ]
+}

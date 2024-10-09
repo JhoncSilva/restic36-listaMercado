@@ -1,0 +1,12 @@
+<div class="produto"
+  (dblclick)="onToggle(produto)"
+  [ngClass]="{reminder: produto.comprado}"
+>
+  <h3>{{produto.produto}}
+    <div class="icons">
+      <fa-icon [icon]="faPencil" [ngStyle]="{'color': '#F57C00'}" (click)="onEdit(produto)"></fa-icon>
+      <fa-icon [icon]="faTrash" [ngStyle]="{'color': '#D32F2F'}" (click)="onDelete(produto)"></fa-icon>
+    </div>
+  </h3>
+  <p>{{produto.quantidade}}</p>
+</div>
