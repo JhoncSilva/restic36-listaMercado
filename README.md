@@ -1,27 +1,44 @@
-# ListaMercado
+# 🛒 Lista de Compras de Supermercado
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.7.
+Projeto desenvolvido em **Angular** como parte da **Residência de Software da Bahia (Restic36)**. Esta aplicação básica de lista de compras permite que o usuário crie, exclua e marque itens como concluídos, utilizando o **JSON Server** como back-end simulado para armazenamento dos dados.
 
-## Development server
+---
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## 🚀 Funcionalidades
 
-## Code scaffolding
+- **Adicionar Itens**: Crie novos itens para a lista de compras.
+- **Excluir Itens**: Remova itens indesejados da lista.
+- **Marcar como Concluído**: Atualize o status dos itens para indicar que já foram comprados.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## 🛠️ Tecnologias Utilizadas
 
-## Build
+- **Angular**: Framework front-end usado para construir a interface e gerenciar a lógica da aplicação.
+- **JSON Server**: Utilizado como um back-end fake para simular a persistência dos dados de itens da lista.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## ⚙️ Como Executar o Projeto
 
-## Running unit tests
+### Pré-requisitos
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- **Node.js** instalado
+- **Angular CLI** e **JSON Server** instalados globalmente
 
-## Running end-to-end tests
+### Passo a Passo
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+1. **Clone o repositório**:
+   ```bash
+   git clone https://github.com/JhoncSilva/restic36-listaMercado.git
+   cd restic36-listaMercado
 
-## Further help
+2. **Instale as dependências**:
+   ```bash
+   npm install
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+3. **Inicie o JSON Server**:
+   ```bash
+   json-server --watch db.json
+
+4. **Inicie o servidor Angular**:
+   ```bash
+   ng server
+
+5. **Abra o navegador e acesse http://localhost:4200**.
